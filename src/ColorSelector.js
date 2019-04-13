@@ -8,6 +8,10 @@ export default class ColorSelector extends Component {
   setSelectedColor = (str) => {
     color: this.props.str
   }   
+  
+  onClick = () => {
+  this.props.onClick({setSelectedColor(str)})
+  }
       
       return <div key={idx} onClick={this.onClick} className="color-swatch" style={{backgroundColor: str}}/>
     })
