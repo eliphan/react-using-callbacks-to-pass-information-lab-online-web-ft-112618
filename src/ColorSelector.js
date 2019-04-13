@@ -12,7 +12,7 @@ export default class ColorSelector extends Component {
     }
   }
       
-  this.setSelectedColor = (str) => {
+  this.setState = (str) => {
     color: this.props.str
   } 
   
