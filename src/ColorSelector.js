@@ -29,5 +29,7 @@ setSelectedColor = (str) => {
 }
 
 onClick = () => {
-  this.props.onClick
+  this.props.onClick({setSelectedColor(str)})
 }
+
+return <div
