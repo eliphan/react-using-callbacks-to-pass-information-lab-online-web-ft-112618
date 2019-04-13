@@ -6,10 +6,11 @@ export default class ColorSelector extends Component {
     ["#F00", "#F80", "#FF0", "#0F0", "#00F", "#508", "#90D", "#FFF", "#000"].map((str, idx) => {
   
   constructor(props) {
-    super(props)
+    super(props);
+    
     this.state = {
-      this.onClick.bind(this)
-    }
+     color: this.onClick.bind(this)
+    };
   }
       
   this.setState = (str) => {
