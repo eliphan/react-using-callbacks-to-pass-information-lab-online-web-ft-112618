@@ -12,15 +12,11 @@ export default class ColorSelector extends Component {
      color: this.onClick.bind(this)
     };
   }
-      
-  this.setState = (str) => {
+  
+  setSelectedColor = (str) => {
     color: this.props.str
-  } 
-  
-      this.setState({
-      count: this.state.count + 1
-    })
-  
+  }   
+
   onClick = () => {
   this.props.onClick({setSelectedColor(str)})
   }
@@ -39,18 +35,3 @@ export default class ColorSelector extends Component {
   
 }
 
-
-      const cb = () => { this.props.setSelectedColor(str) }
-      return <div key={idx} onClick={this.onClick} className="color-swatch" style={{backgroundColor: str}}/>
-    })
-  )
-  
-setSelectedColor = (str) => {
-  color: this.props.str
-}
-
-onClick = () => {
-  this.props.onClick({setSelectedColor(str)})
-}
-
-return <div
