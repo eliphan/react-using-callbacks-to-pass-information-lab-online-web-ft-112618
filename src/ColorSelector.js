@@ -14,7 +14,9 @@ export default class ColorSelector extends Component {
       
   this.setSelectedColor = (str) => {
     color: this.props.str
-  }   
+  } 
+  
+  
   
   onClick = () => {
   this.props.onClick({setSelectedColor(str)})
