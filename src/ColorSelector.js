@@ -17,3 +17,17 @@ export default class ColorSelector extends Component {
   }
   
 }
+
+
+      const cb = () => { this.props.setSelectedColor(str) }
+      return <div key={idx} onClick={cb} className="color-swatch" style={{backgroundColor: str}}/>
+    })
+  )
+  
+setSelectedColor = (str) => {
+  color: this.props.str
+}
+
+onClick = () => {
+  this.props.onClick
+}
