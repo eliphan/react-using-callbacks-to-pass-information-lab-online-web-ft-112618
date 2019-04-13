@@ -8,7 +8,7 @@ export default class ColorSelector extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      this.i=onClick.bind(this)
+      this.onClick.bind(this)
     }
   }
       
